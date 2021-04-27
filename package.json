@@ -1,0 +1,24 @@
+{
+  "name": "0008",
+  "version": "1.0.0",
+  "description": "\"Lo básico no es falta de evolución, sino lo elemental\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "git add -A && git commit -m \"Agregados cambios y mejoras\" && git push",
+    "scss": "sass css",
+    "scss_watch": "sass --watch css",
+    "comp": "npm run scss && npm run min",
+    "min": "minify js/main.js > js/main.min.js && minify css/styles.css > css/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccsmiguelangel/0008_jungle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccsmiguelangel/0008_jungle/issues"
+  },
+  "homepage": "https://github.com/ccsmiguelangel/0008_jungle#readme"
+}
