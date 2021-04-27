@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rancho&display=swap');
+:root {
+  --blue:   #0052c3;
+  --white:  #ffffff;
+  --black:  #222324;
+  --yellow: #ffdb45;
+
+  --font-sans:   'Popins', sans-serif;
+  --font-cursive:   'Rancho', cursive;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(var(--black),var(--blue));
+  min-height: 100vh;
+}
+/* BTN */
+.btn {
+  position: absolute;
+  text-decoration: none;
+  display: inline;
+  padding: 8px 30px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+/* === */
+/* HEADER */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+#header > .logo {
+  font-family: var(--font-cursive);
+  color: var(--white);
+  font-size: 3em;
+  text-decoration: none;
+}
+
+#header > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#header > ul > li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#header > ul > li > a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: var(--white);
+  border-radius: 40px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+} 
+
+#header > ul > li > a:hover {
+  background-color: var(--blue);
+  color: var(--white);
+} 
+
+#header > ul > li > .active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+/* ====== */
+/* S1 */
+#S1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#S1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(to top, var(--blue), transparent);
+  z-index: 10;
+}
+
+#S1__text {
+  font-family: var(--font-cursive);
+  position: absolute;
+  color: var(--white);
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.55em;
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+}
+
+#S1__text span {
+  font-family: var(--font-sans);
+  font-size: 0.20em;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#S1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  transform: translateY(80px);
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+}
+
+#water {
+  transform: translateY(50px) !important;
+  -webkit-transform: translateY(50px) !important;
+  -moz-transform: translateY(50px) !important;
+  -ms-transform: translateY(50px) !important;
+  -o-transform: translateY(50px) !important;
+}
+/* == */
+
+/* S2 */
+#S2 {
+  position: relative;
+  padding: 100px;
+  background: linear-gradient(var(--blue), var(--black));
+}
+
+.S2__h2 {
+  font-size: 3.5em;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.S2__p {
+  font-size: 1em;
+  color: var(--white);
+}
+/* == */
